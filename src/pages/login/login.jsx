@@ -36,6 +36,9 @@ const Login = () => {
                     </div>
 
                     <Button style={{ backgroundColor: "#0075FF" }} className="custom-login-button" variant="contained">Sign up</Button>
+                    <p className="login-line">
+                        Already have an account? <a href="" className="login-btn">Sign in</a>
+                    </p>
                 </div>
 
 

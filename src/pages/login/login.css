@@ -25,7 +25,7 @@ body {
 .image-text {
     position: absolute;
     top: 45%;
-    left: 6%;
+    left: 10%;
     color: white;
 }
 
@@ -98,7 +98,7 @@ body {
 
 .custom-login-button {
     border-radius: 8px;
-    width: 85%;
+    width: 65%;
     font-family: sans-serif;
     text-transform: none;
     font-weight: bold;
@@ -118,8 +118,18 @@ body {
 }
 
 .login-form-footer {
-    width: 81%;
+    width: 60%;
     margin-top: 10px;
     margin-bottom: 15px;
 
+}
+.login-line{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'plus jakarta display' sans-serif;
+}
+.login-btn{
+    text-decoration: none;
+    color: #fff;
+    
 }
