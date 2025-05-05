@@ -119,8 +119,9 @@ p{
         rgba(6, 11, 38, 0.74),
         rgba(5, 31, 160, 0.5)
       );
-    width:40%;
-    border-radius: 10px;
+  
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .dashboard-user-container{
@@ -167,9 +168,10 @@ p{
         rgba(5, 31, 160, 0.5)
       );
     height: 344px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin:0px 10px 0px 10px;
     width: 20%;
+    padding: 20px;
 
 }
 .dashboard-main-heading{
@@ -192,6 +194,17 @@ p{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+.smile-icon-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3B82F6;
 }
 .dashboard-sub-heading{
     font-size: 14px;
@@ -245,6 +258,7 @@ p{
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
      text-align: center;
+     width: 103px;
      
     
 }
@@ -255,4 +269,69 @@ p{
     color: white;
     font-weight: bold;
 }
+.dashboard-user-referral-container{
+    display: flex;
+    flex:0.8;
+    flex-direction: column;
+    height: 344px;
+    background: linear-gradient(
+        to right,
+        rgba(6, 11, 38, 0.74),
+        rgba(5, 31, 160, 0.5)
+      );
+    width:40%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.cards-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.small-cards-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #060B28BD;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:white;
+    padding: 20px;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.small-cards-heading{
+    font-size: 14px;
+    font-family: 'plus jakarta display' sans-serif;
+    color: #A0AEC0;
+    margin-bottom: 10px;
+   
+}
+.small-cards-value{
+    font-size: 18px;
+    font-family: 'plus jakarta display' sans-serif;
+    color: white;
+    font-weight: bold;
+   
+}
+.circular-progress-container{
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.dashboard-user-referral-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 

@@ -1,0 +1,20 @@
+.circular-progress-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'plus jakarta display' sans-serif;
+    text-align: center;
+    color:#A0AEC0;
+}
+.circular-progress-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'plus jakarta display' sans-serif;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+   
+}

@@ -7,8 +7,10 @@ import { TbUsersPlus } from "react-icons/tb";
 import { LuNotepadText } from "react-icons/lu";
 import { FaShoppingCart } from "react-icons/fa";
 import SemiCircleProgressBar from "react-progressbar-semicircle";
-
-
+import HalfCircularProgress from '../../components/halfCirculrProgress/halfCircularProgress';
+import { FaRegSmile } from "react-icons/fa";
+import { buildStyles, CircularProgressbar, CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import CircularProgressBar from '../../components/circularProgress/circularProgress';
 const Dashboard = () => {
 
     const data = [
@@ -64,14 +66,12 @@ const Dashboard = () => {
 
                     </div>
                     <div className='dashbord-satisfaction-container'>
-                        <p className='dashboard-main-heading'>Satisfaction</p>
+                        <p className='dashboard-main-heading'>Satisfaction Rate</p>
                         <p className='dashboard-sub-heading'>From all projects</p>
 
                         <div className='dashboard-satisfaction-progress'>
-
-                        <SemiCircleProgressBar stroke={"#0075FF"} diameter={240} background={"#22234b"} percentage={80} showPercentValue />
+                            <HalfCircularProgress progress={75} size={200} strokeWidth={16} color="#10b981" />
                         </div>
-
                         <div className='rating-section-container'>
                             <p className='percentage-value'>0%</p>
                             <div className='rating-section-percentage'>
@@ -84,19 +84,32 @@ const Dashboard = () => {
 
                     </div>
 
-                    <div className="dashboard-user-main-container">
-                        <div className="dashboard-user-container">
-                            <div className='dshboard-user-details'>
-                                <p className="dashboard-user-welcome">Welcome back,</p>
-                                <p className='dashboard-user-name'>Mark Johnson</p>
-                                <p className='dashboard-user-subtitle'>Glad to see you again!</p>
-                                <p className='dashboard-user-question'>Ask me anything.</p>
-                            </div>
-                            <p className='dashboard-user-btn'>Tap to record</p>
-                        </div>
-                        {/* <img src={Jelly_Fish} alt="Jelly Fish" className="dashboard-card-image" /> */}
+                    <section className="dashboard-user-referral-container">
 
-                    </div>
+                        <p className='dashboard-main-heading'>Referral Tracking</p>
+
+                        <div className='dashboard-user-referral-card'>
+                            <div className='cards-container'>
+                                <div className='small-cards-container'>
+                                    <p className='small-cards-heading'>Invited</p>
+                                    <p className='small-cards-value'>1445 people</p>
+                                </div>
+                                <div className='small-cards-container'>
+                                    <p className='small-cards-heading'>Invited</p>
+                                    <p className='small-cards-value'>1445 people</p>
+                                </div>
+                            </div>
+                            <div className="circular-progress-container">
+                               <CircularProgressBar/>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </section>
 
 
                 </div>
