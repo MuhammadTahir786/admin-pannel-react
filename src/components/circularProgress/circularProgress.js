@@ -38,8 +38,8 @@ const CircularProgressBar = ({ progress = 50 }) => {
         </svg>
 
         {/* Text content centered in circle */}
-        <div
-          style={{ top:100,marginTop: '10px',position: 'absolute', textAlign: 'center', color: '#3b82f6',top:350,marginLeft:40}}
+        <div 
+         className='progress-text-container'
         >
           <p className="circular-progress-text">Safety</p>
           <p className="circular-progress-value">{progress}%</p>

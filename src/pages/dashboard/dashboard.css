@@ -2,7 +2,17 @@ p{
     margin: 0;
     padding: 0;
 }
-
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+  }
+  .dashboard-container {
+    overflow-y: auto;
+    height: 100vh; /* or 100% if the parent has a set height */
+  
+  }
 .dashboard-heading{
     font-size: 30px;
     font-family: 'plus jakarta display' sans-serif;
@@ -112,7 +122,7 @@ p{
 .dashboard-user-main-container{
     display: flex;
     flex:1;
-    height: 344px;
+    height: 270px;
     /* background-color: #01041e; */
     background: linear-gradient(
         to right,
@@ -167,7 +177,7 @@ p{
         rgba(6, 11, 38, 0.74),
         rgba(5, 31, 160, 0.5)
       );
-    height: 344px;
+    height: 270px;
     border-radius: 20px;
     margin:0px 10px 0px 10px;
     width: 20%;
@@ -273,7 +283,7 @@ p{
     display: flex;
     flex:0.8;
     flex-direction: column;
-    height: 344px;
+    height: 270px;
     background: linear-gradient(
         to right,
         rgba(6, 11, 38, 0.74),
@@ -294,21 +304,22 @@ p{
     /* justify-content: space-between; */
     background-color: #060B28BD;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     color:white;
     padding: 20px;
     width: 150px;
     height: 50px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 .small-cards-heading{
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #A0AEC0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    text-align: start;
    
 }
 .small-cards-value{
@@ -331,6 +342,112 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.dashboard-chart-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.dashboard-area-chart-container{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    height: 344px;
+   width:55%;
+    background: linear-gradient(
+        to right,
+        rgba(6, 11, 38, 0.74),
+        rgba(5, 31, 160, 0.8)
+      );
+      margin-top: 10px;
+      color:white;
+      padding: 20px;
+      margin-right: 10px;
+
+}
+
+.dashboard-bar-chart-container{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    height: 344px;
+   width:45%;
+    background: linear-gradient(
+        to right,
+        rgba(6, 11, 38, 0.74),
+        rgba(5, 31, 160, 0.8)
+      );
+      margin-top: 10px;
+      color:white;
+      padding: 20px;
+}
+.bar-chart-container{
+    background-color: #060B28BD;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.user-sub-heading{
+    display: flex;
+    flex-direction: row;
+}
+.user-sub-heading-value{
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'plus jakarta display' sans-serif;
+    color: #12ab12;
+    margin-left:10px;
+    margin-top: 5px;
+}
+.user-sub-heading-text{
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'plus jakarta display' sans-serif;
+    color: #A0AEC0;
+    margin-top: 5px;
+    margin-left:2px;
+   
+}
+
+.dashboard-active-users-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.active-users-card-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    background-color: #3B82F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active-users-card-icon-container{
+    display: flex;
+   align-items: center;
+    flex-direction: row;
+}
+.active-users-card-name{
+    font-size: 14px;
+    font-family: 'plus jakarta display' sans-serif;
+    color: #A0AEC0;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.active-users-card-value{
+    font-size: 18px;
+    font-family: 'plus jakarta display' sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
 
