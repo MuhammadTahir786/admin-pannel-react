@@ -1,0 +1,230 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+
+.table-main-container {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.authors-table-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+    padding: 20px;
+
+}
+
+.project-table-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom:50px;
+}
+
+.table-main-heading {
+    color: white;
+    font-size: 18px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.authors-table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-table-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px
+
+}
+
+.table-heading {
+    color: #A0AEC0;
+    font-size: 10px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: bold;
+    flex: 1;
+    margin-bottom: 5px;
+
+}
+
+.table-heading-line {
+    width: 100%;
+    height: 1px;
+    background-color: #A0AEC0;
+    margin-top: 5px;
+}
+
+.authors-table-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.table-row-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+
+}
+
+.table-row-pic {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 5px;
+
+}
+
+.table-row-pic-overlay {
+    margin-left: 10px;
+
+
+}
+
+.table-row-name {
+    color: white;
+    font-size: 12px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: bold;
+}
+
+.table-row-email {
+    color: #A0AEC0;
+    font-size: 12px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: 400;
+}
+
+.table-row-role-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.table-row-role {
+    color: white;
+    font-size: 12px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: bold
+}
+
+.table-row-field {
+    color: #A0AEC0;
+    font-size: 10px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.table-row-status-container {
+    display: flex;
+    flex: 1;
+    color: white;
+    font-size: 12px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: 400;
+}
+
+.table-row-status-green {
+    background-color: #01B574;
+    padding: 5px;
+    border-radius: 5px;
+    width: 40px;
+}
+
+.table-row-status-white {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+
+}
+
+.table-row-date-container {
+    display: flex;
+    flex: 1;
+    color: white;
+    font-size: 12px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: 400;
+
+}
+
+.table-row-percentage-container{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'plus jakarta display' sans-serif;
+    font-weight: bold;
+}
+.table-row-percentage{
+    margin-right:10px;
+    display: flex;
+    flex: 0.15;
+}
+
+.project-sub-heading{
+    display: flex;
+    flex-direction: row;
+    color: #A0AEC0;
+    align-items: center;
+}
+
+.sub-text{
+    margin-left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.prgress-container{
+    display: flex;
+    flex: 1;
+   
+}

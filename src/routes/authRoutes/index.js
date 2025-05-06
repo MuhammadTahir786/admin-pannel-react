@@ -6,7 +6,7 @@ const AuthRoutes = () => {
     return (
 
         <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/register" element={<div>Register</div>} />
             <Route path="/forgot-password" element={<div>Forgot Password</div>} />
             <Route path="/reset-password" element={<div>Reset Password</div>} />

@@ -7,13 +7,15 @@ const Sidebar = () => {
     <div className="sidebar">
       <h2 className="sidebar-title">VISION UI FREE</h2>
       <nav className="sidebar-nav">
-        <NavLink exact="true" to="/" className="sidebar-link" activeclassname="active">
+        <NavLink exact="true" to="/dashboard" className="sidebar-link" activeclassname="active">
           Dashboard
         </NavLink>
         <NavLink to="/tables" className="sidebar-link" activeclassname="active">
           Tables
         </NavLink>
-        {/* Add more links as needed */}
+        <NavLink to="/billing" className="sidebar-link" activeclassname="active">
+          Billing
+        </NavLink>
       </nav>
     </div>
   );

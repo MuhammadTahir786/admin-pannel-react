@@ -1,0 +1,398 @@
+.card-container {
+    background-image: url('../../assets/images/cardBackground.png');
+    /* Replace with your image URL */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 431px;
+    max-width: 431px;
+    /* aspect-ratio: 431 / 240; Maintains the original aspect ratio */
+    /* padding: 5vw; or adjust with media queries for finer control */
+    box-sizing: border-box;
+    padding: 20px;
+
+  
+}
+.billing-cards-main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.circle-image {
+    width: 49px;
+    height: 32px;
+
+}
+
+.card-heading {
+    color: white;
+    font-weight: bold;
+}
+
+.card-footer {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.card-bottom-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.card-number {
+    font-size: clamp(16px, 4vw, 24px); /* Responsive between 16px and 24px */
+    color: white;
+    font-weight: bold;
+  }
+
+.validity-container {
+    color: white;
+
+}
+
+.validity-heading {
+    font-size: 10px;
+}
+
+.validity-date {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cvv-container {
+    color: white;
+    margin-left: 30px;
+}
+
+.cvv-heading {
+    font-size: 10px;
+}
+
+.cvv-number {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.credit-balance-main-container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+
+    border-radius: 20px;
+    margin-left: 22px;
+   
+}
+
+.credit-balance-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+
+
+}
+
+.credit-balance-img {
+    width: '100%';
+    height: 103px;
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subheading {
+    color: #A0AEC0;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.details-heading {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.details-date {
+    color: #A0AEC0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.icon-container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 21px;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit-detil-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.balance-value {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.details-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+}
+
+.billing-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+
+.payment-method-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+
+    /* background-color: #01041e; */
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.payment-heading {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'plus jakarta display' sans-serif;
+}
+
+.custom-add-card-button {
+    font-size: 14PX;
+    color: white;
+
+}
+
+.payment-header {
+    display: flex;
+    flex-direction: "row";
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+    align-items: center;
+
+}
+
+.mastercard-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    width: 40%;
+}
+
+.visa-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    width: 40%;
+}
+
+.payment-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0px 20px
+}
+
+.invoices-main-container {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    width: 674px;
+    height: 436px;
+    /* background-color: #01041e; */
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.billing-main-upper-container {
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.invoice-date {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.invoice-id {
+    font-size: 12px;
+    color: rgba(160, 174, 192, 1);
+}
+
+.invoices-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 55px;
+}
+
+.invoice-total {
+    font-size: 12px;
+    color: rgba(160, 174, 192, 1);
+}
+
+.billing-information-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 50px;
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.billing-detail-conatiner {
+    display: flex;
+    flex-direction: row;
+
+    background: rgba(6, 11, 38, 0.74);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.billing-heading {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.billing-details {
+    margin-left: 20px;
+}
+
+.billing-name {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.billing-company-name,
+.billing-email-address,
+.billing-vat-number {
+    font-size: 12px;
+    color: #A0AEC0;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.delete-btn-text {
+    color: red;
+    font-size: 12px;
+    margin-left: 5px
+}
+
+.edit-btn-text {
+    color: green;
+    font-size: 12px;
+    margin-left: 5px
+}
+
+.delete-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.transaction-history-container {
+    display: flex;
+    flex-direction: column;
+   flex:0.2;
+    /* background-color: #01041e; */
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px
+}
+
+.billing-bottom-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

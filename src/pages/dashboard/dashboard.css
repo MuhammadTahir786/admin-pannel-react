@@ -11,6 +11,7 @@ html, body {
   .dashboard-container {
     overflow-y: auto;
     height: 100vh; /* or 100% if the parent has a set height */
+
   
   }
 .dashboard-heading{
@@ -18,7 +19,7 @@ html, body {
     font-family: 'plus jakarta display' sans-serif;
     font-weight: bold;
    color: white;
-    margin-top: 20px;
+    margin-top: 0px;
 
 }
 
@@ -348,6 +349,7 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
     
 }
 

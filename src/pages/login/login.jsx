@@ -41,9 +41,6 @@ const Login = () => {
                     </p>
                 </div>
 
-
-
-
             </dvi>
         </div>
     )
