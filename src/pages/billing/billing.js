@@ -18,6 +18,7 @@ function Billing() {
         { id: '#MS-183746', date: 'January,15,2025', total: '$120' },
         { id: '#MS-672349', date: 'May,03,2025', total: '$310' },
         { id: '#MS-297463', date: 'March,22,2025', total: '$225' },
+
     ];
     const billingData = [
         { id: 1, companyName: "Vilkim Burito", email: "oliver@burito.com", vat: "FRB123476" },
@@ -63,24 +64,27 @@ function Billing() {
                             </div>
                             <div className='credit-balance-main-container'>
                                 <div className='credit-balance-img-container'>
-                                    <img src={Credit_Balance} className='credit-balance-img' />
+                                    <p className='credit-balance-heading'>Credit Balance</p>
+                                    <p className='credit-balance-value'>$200</p>
                                 </div>
-                                <p className='subheading'>NEWEST</p>
+                                <div className='credit-balance-footer'>
+                                    <p className='subheading'>NEWEST</p>
 
-                                <div className='credit-detil-container'>
-                                    <div className='icon-container'>
-                                        <HiOutlineBuildingOffice2 color='green' size={20} />
-                                    </div>
-                                    <div className='details-info-container'>
-                                        <div className='details'>
-                                            <p className='details-heading'>Bill & Taxses</p>
-                                            <p className='details-date'>Today 16:34</p>
+                                    <div className='credit-detil-container'>
+                                        <div className='icon-container'>
+                                            <HiOutlineBuildingOffice2 color='green' size={20} />
                                         </div>
-                                        <div className="balnce-container">
-                                            <p className='balance-value'>-$154.50</p>
+                                        <div className='details-info-container'>
+                                            <div className='details'>
+                                                <p className='details-heading'>Bill & Taxses</p>
+                                                <p className='details-date'>Today 16:34</p>
+                                            </div>
+                                            <div className="balnce-container">
+                                                <p className='balance-value'>-$154.50</p>
+                                            </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
 
 
@@ -110,17 +114,19 @@ function Billing() {
                             <p className='payment-heading'>Invoices</p>
                             <Button style={{ backgroundColor: "#0075FF", fontWeight: "bold" }} className="custom-add-card-button" variant="contained">View All</Button>
                         </div>
-                        {invoicesData?.map((item, index) => {
-                            return (
-                                <div key={index} className='invoices-list-container'>
-                                    <div className='invoices-details'>
-                                        <p className='invoice-date'>{item?.date}</p>
-                                        <p className='invoice-id'>{item?.id}</p>
+                        <div className='invoices-scroll-container'>
+                            {invoicesData?.map((item, index) => {
+                                return (
+                                    <div key={index} className='invoices-list-container'>
+                                        <div className='invoices-details'>
+                                            <p className='invoice-date'>{item?.date}</p>
+                                            <p className='invoice-id'>{item?.id}</p>
+                                        </div>
+                                        <p className='invoice-total'>{item?.total}</p>
                                     </div>
-                                    <p className='invoice-total'>{item?.total}</p>
-                                </div>
-                            )
-                        })}
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
                 <div className='billing-bottom-container'>

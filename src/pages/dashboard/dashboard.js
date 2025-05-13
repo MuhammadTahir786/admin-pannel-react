@@ -60,12 +60,19 @@ const Dashboard = () => {
                 type: 'month',
                 categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             },
-            tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
-                },
-            },
+
         },
+        tooltip: {
+            theme: 'dark', // Change to 'dark' so text becomes white and background becomes dark
+            // OR use custom CSS if needed:
+            style: {
+                fontSize: '14px',
+                color: '#000000'
+            },
+            onDatasetHover: {
+                highlightDataSeries: true
+            }
+        }
 
 
     });
@@ -120,13 +127,6 @@ const Dashboard = () => {
             fill: {
                 opacity: 1
             },
-            tooltip: {
-                y: {
-                    formatter: function (val) {
-                        return "$ " + val + " thousands"
-                    }
-                }
-            }
         },
 
 
@@ -243,20 +243,20 @@ const Dashboard = () => {
                                 return (
                                     <div key={index} className='dashboard-active-users-card'>
                                         <div className='active-users-card-icon-container'>
-                                        <div className='active-users-card-icon'>
-                                            {item.icon}
+                                            <div className='active-users-card-icon'>
+                                                {item.icon}
+                                            </div>
+                                            <p className='active-users-card-name'>{item.name}</p>
                                         </div>
-                                        <p className='active-users-card-name'>{item.name}</p>
-                                        </div>
-                                        
+
                                         <div className='active-users-card-details'>
-                                           
+
                                             <p className='active-users-card-value'>{item.value}</p>
-                                            <ProgressBar 
-                                            completed={item.percentage} 
-                                            height={5}
-                                            labelSize={0}
-                                            bgColor="#10b981"
+                                            <ProgressBar
+                                                completed={item.percentage}
+                                                height={5}
+                                                labelSize={0}
+                                                bgColor="#10b981"
                                             />
                                             {/* <p className='active-users-card-percentage'>{item.percentage}</p> */}
                                         </div>

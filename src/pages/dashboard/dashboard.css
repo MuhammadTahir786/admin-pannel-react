@@ -1,29 +1,49 @@
-p{
+p {
     margin: 0;
     padding: 0;
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
-    
-  }
-  .dashboard-container {
-    overflow-y: auto;
-    height: 100vh; /* or 100% if the parent has a set height */
 
-  
-  }
-.dashboard-heading{
+}
+
+.apexcharts-tooltip {
+    background-color: #1f2937 !important;
+    /* dark gray */
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+    font-size: 14px !important;
+}
+
+.apexcharts-tooltip-title {
+    background-color: #111827 !important;
+    /* slightly darker */
+    color: #ffffff !important;
+}
+
+.dashboard-container {
+    overflow-y: auto;
+    height: 100vh;
+    /* or 100% if the parent has a set height */
+
+
+}
+
+.dashboard-heading {
     font-size: 30px;
     font-family: 'plus jakarta display' sans-serif;
     font-weight: bold;
-   color: white;
+    color: white;
     margin-top: 0px;
 
 }
 
-.dashboard-card-container{
+.dashboard-card-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,12 +51,10 @@ html, body {
     margin-top: 20px;
 }
 
-.dashboard-card{
-    background: linear-gradient(
-        to right,
-        rgba(6, 11, 38, 0.74),
-        rgba(26, 31, 55, 0.5)
-      );
+.dashboard-card {
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(26, 31, 55, 0.5));
     align-items: center;
     width: 30%;
     height: 40px;
@@ -47,38 +65,41 @@ html, body {
     flex-direction: row;
     margin-right: 20px;
 }
-.card-content{
+
+.card-content {
     display: flex;
-    flex:1;
+    flex: 1;
     flex-direction: column;
 }
 
-.card-title{
+.card-title {
     margin: 0;
     padding: 0;
     font-size: 12px;
     color: #A0AEC0;
 }
-.card-value-container{
+
+.card-value-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
 }
 
-.card-value{
+.card-value {
     font-size: 20px;
     font-family: 'plus jakarta display' sans-serif;
     font-weight: bold;
     color: white;
 }
-.card-percentage{
+
+.card-percentage {
     font-size: 12px;
     color: #A0AEC0;
     margin-left: 5px;
 }
 
-.card-icon{
+.card-icon {
     width: 30px;
     height: 30px;
     border-radius: 20%;
@@ -90,57 +111,57 @@ html, body {
 
 
 
-.dashboard-user-welcome{
+.dashboard-user-welcome {
     font-size: 14px;
     color: #A0AEC0;
 }
 
-.dashboard-user-name{
+.dashboard-user-name {
     font-size: 28px;
     font-family: 'plus jakarta display' sans-serif;
     font-weight: bold;
     color: white;
 }
 
-.dashboard-user-subtitle{
+.dashboard-user-subtitle {
     font-size: 14px;
     color: #A0AEC0;
-    margin-top:10px;
+    margin-top: 10px;
     padding-bottom: 5px;
-    
+
 }
-.dashboard-user-question{
+
+.dashboard-user-question {
     font-size: 14px;
     color: #A0AEC0;
-   
+
 }
-.dashboard-user-btn{
+
+.dashboard-user-btn {
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: white;
 }
 
-.dashboard-user-main-container{
+.dashboard-user-main-container {
     display: flex;
-    flex:1;
+    flex: 1;
     height: 270px;
     /* background-color: #01041e; */
-    background: linear-gradient(
-        to right,
-        rgba(6, 11, 38, 0.74),
-        rgba(5, 31, 160, 0.5)
-      );
-  
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+
     border-radius: 20px;
     padding: 20px;
 }
 
-.dashboard-user-container{
+.dashboard-user-container {
     display: flex;
     width: 300px;
     flex-direction: column;
     margin-top: 20px;
-    color:white;
+    color: white;
     font-family: "plus jakarta display" sans-serif;
     border-radius: 10px;
     padding: 20px;
@@ -148,66 +169,69 @@ html, body {
 
 }
 
-.dashboard-card-image{
+.dashboard-card-image {
     width: 300px;
     height: 344px;
-    border-radius: 0px 10px 10px 0px;   
+    border-radius: 0px 10px 10px 0px;
 }
 
-.dashbord-satidfaction-container{
+.dashbord-satidfaction-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
-.dashboard-details-container{
+
+.dashboard-details-container {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
     align-items: center;
     margin-top: 20px;
 }
-.dashbord-satisfaction-container{
+
+.dashbord-satisfaction-container {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    background: linear-gradient(
-        to right,
-        rgba(6, 11, 38, 0.74),
-        rgba(5, 31, 160, 0.5)
-      );
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
     height: 270px;
     border-radius: 20px;
-    margin:0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
     width: 20%;
     padding: 20px;
 
 }
-.dashboard-main-heading{
+
+.dashboard-main-heading {
     font-size: 18px;
     font-family: 'plus jakarta display' sans-serif;
     font-weight: bold;
     color: white;
     margin-top: 20px;
 }
-.dashboard-main-heading{
+
+.dashboard-main-heading {
     text-align: start;
     font-size: 18px;
     font-family: 'plus jakarta display' sans-serif;
     font-weight: bold;
     color: white;
-    margin-left:10px
+    margin-left: 10px
 }
-.dashboard-satisfaction-progress{
+
+.dashboard-satisfaction-progress {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.smile-icon-container{
+.smile-icon-container {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -217,18 +241,19 @@ html, body {
     border-radius: 50%;
     background-color: #3B82F6;
 }
-.dashboard-sub-heading{
+
+.dashboard-sub-heading {
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #A0AEC0;
-    margin-left:10px
-
+    margin-left: 10px
 }
-.rating-section-container{
+
+.rating-section-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
+
     margin-top: 20px;
     background-color: #060B28BD;
     border-radius: 10px;
@@ -237,69 +262,71 @@ html, body {
     margin-right: 20px;
     padding-right: 10px;
     color: white;
-   
+
 }
 
-.percentage-value{
+.percentage-value {
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #A0AEC0;
-    margin-left:10px;
+    margin-left: 10px;
     width: 60px;
     text-align: start;
-    
+
     margin-right: 10px;
     padding-top: 20px;
 
 }
-.percentage-value-2{
+
+.percentage-value-2 {
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #A0AEC0;
-    margin-left:10px;
+    margin-left: 10px;
     width: 60px;
     text-align: end;
     padding-top: 20px;
-  
+
 }
-.rating-section-percentage{
+
+.rating-section-percentage {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
-     text-align: center;
-     width: 103px;
-     
-    
+    text-align: center;
+    width: 103px;
+
+
 }
 
-.percentage-actual-value{
+.percentage-actual-value {
     font-size: 28px;
     font-family: 'plus jakarta display' sans-serif;
     color: white;
     font-weight: bold;
 }
-.dashboard-user-referral-container{
+
+.dashboard-user-referral-container {
     display: flex;
-    flex:0.8;
+    flex: 0.8;
     flex-direction: column;
     height: 270px;
-    background: linear-gradient(
-        to right,
-        rgba(6, 11, 38, 0.74),
-        rgba(5, 31, 160, 0.5)
-      );
-    width:40%;
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.5));
+    width: 40%;
     border-radius: 20px;
     padding: 20px;
 }
-.cards-container{
+
+.cards-container {
     display: flex;
     flex-direction: column;
 }
 
-.small-cards-container{
+.small-cards-container {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -308,121 +335,127 @@ html, body {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    color:white;
+    color: white;
     padding: 20px;
     width: 150px;
     height: 50px;
     /* align-items: center; */
     /* justify-content: center; */
 }
-.small-cards-heading{
+
+.small-cards-heading {
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #A0AEC0;
     margin-bottom: 5px;
     text-align: start;
-   
+
 }
-.small-cards-value{
+
+.small-cards-value {
     font-size: 18px;
     font-family: 'plus jakarta display' sans-serif;
     color: white;
     font-weight: bold;
-   
+
 }
-.circular-progress-container{
+
+.circular-progress-container {
     display: flex;
-   
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
 }
-.dashboard-user-referral-card{
+
+.dashboard-user-referral-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.dashboard-chart-container{
+.dashboard-chart-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    
+    margin-bottom: 100px;
+
+
 }
 
-.dashboard-area-chart-container{
+.dashboard-area-chart-container {
     display: flex;
     border-radius: 20px;
     flex-direction: column;
     height: 344px;
-   width:55%;
-    background: linear-gradient(
-        to right,
-        rgba(6, 11, 38, 0.74),
-        rgba(5, 31, 160, 0.8)
-      );
-      margin-top: 10px;
-      color:white;
-      padding: 20px;
-      margin-right: 10px;
+    width: 55%;
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.8));
+    margin-top: 10px;
+    color: white;
+    padding: 20px;
+    margin-right: 10px;
 
 }
 
-.dashboard-bar-chart-container{
+.dashboard-bar-chart-container {
     display: flex;
     border-radius: 20px;
     flex-direction: column;
     height: 344px;
-   width:45%;
-    background: linear-gradient(
-        to right,
-        rgba(6, 11, 38, 0.74),
-        rgba(5, 31, 160, 0.8)
-      );
-      margin-top: 10px;
-      color:white;
-      padding: 20px;
+    width: 45%;
+    background: linear-gradient(to right,
+            rgba(6, 11, 38, 0.74),
+            rgba(5, 31, 160, 0.8));
+    margin-top: 10px;
+    color: white;
+    padding: 20px;
 }
-.bar-chart-container{
+
+.bar-chart-container {
     background-color: #060B28BD;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 
 }
-.user-sub-heading{
+
+.user-sub-heading {
     display: flex;
     flex-direction: row;
 }
-.user-sub-heading-value{
+
+.user-sub-heading-value {
     flex-direction: row;
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #12ab12;
-    margin-left:10px;
+    margin-left: 10px;
     margin-top: 5px;
 }
-.user-sub-heading-text{
+
+.user-sub-heading-text {
     flex-direction: row;
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #A0AEC0;
     margin-top: 5px;
-    margin-left:2px;
-   
+    margin-left: 2px;
+
 }
 
-.dashboard-active-users-card-container{
+.dashboard-active-users-card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
-.active-users-card-icon{
+
+.active-users-card-icon {
     width: 25px;
     height: 25px;
     border-radius: 20%;
@@ -431,26 +464,26 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-.active-users-card-icon-container{
+
+.active-users-card-icon-container {
     display: flex;
-   align-items: center;
+    align-items: center;
     flex-direction: row;
 }
-.active-users-card-name{
+
+.active-users-card-name {
     font-size: 14px;
     font-family: 'plus jakarta display' sans-serif;
     color: #A0AEC0;
     margin-left: 10px;
     font-weight: 400;
 }
-.active-users-card-value{
+
+.active-users-card-value {
     font-size: 18px;
     font-family: 'plus jakarta display' sans-serif;
     color: white;
     font-weight: bold;
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
-
-
-
